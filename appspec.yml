@@ -7,8 +7,8 @@ files:
 
 hooks:
   ApplicationStop:
-    - location: Script/kill_process.sh # before stop, kill process
+    - location: Scripts/kill_process.sh # before stop, kill process
   BeforeInstall:
-    - location: Script/remove_before.sh # before remove, remove previous files
+    - location: Scripts/remove_before.sh # before remove, remove previous files
   ApplicationStart:
-    - location: Script/run_process.sh # when start, run process
+    - location: Scripts/run_process.sh # when start, run process
